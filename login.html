@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>เข้าสู่ระบบ | เที่ยวบ้านเรา</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <p class="site-name">เที่ยวบ้านเรา ♡</p>
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="places.html">ที่เที่ยว</a></li>
+            <li><a href="food.html">อาหาร</a></li>
+            <li><a href="plan.html">วางแผนเที่ยว</a></li>
+            <li><a href="travel.html">ข้อมูลการเดินทาง</a></li>
+            <li><a href="login.html">เข้าสู่ระบบ</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="login-main">
+
+    <div class="login-box">
+        <div class="login-icon">♡</div>
+
+        <h1>เข้าสู่ระบบ</h1>
+        <p>ยินดีต้อนรับเข้าสู่เว็บไซต์เที่ยวบ้านเรา</p>
+
+        <form id="loginForm">
+
+            <label for="username">ชื่อผู้ใช้</label>
+            <input type="text" id="username"
+                   placeholder="กรอกชื่อผู้ใช้" required>
+
+            <label for="password">รหัสผ่าน</label>
+            <input type="password" id="password"
+                   placeholder="กรอกรหัสผ่าน" required>
+
+            <button type="submit" class="button">
+                เข้าสู่ระบบ
+            </button>
+
+        </form>
+
+        <p class="back-home">
+            <a href="index.html">กลับสู่หน้าแรก</a>
+        </p>
+    </div>
+
+</main>
+
+<footer>
+    <p>001 กมลชนก เยื้อใย | เที่ยวบ้านเรา</p>
+</footer>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    alert("นี่คือระบบเข้าสู่ระบบตัวอย่าง ยังไม่ได้เชื่อมต่อฐานข้อมูลจริง");
+});
+</script>
+
+</body>
+</html>
